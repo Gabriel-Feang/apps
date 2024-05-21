@@ -8,8 +8,9 @@ void main () {
   // late initialization
     late final String size; 
 
-    void goBig() {
-      size = 'big'; // initializing it inside a function, and from now on it is immutable.
+    /// Sets size to "big" and prints it.
+    void setBigSize() {
+      final size = 'big';
       print(size);
     }
 

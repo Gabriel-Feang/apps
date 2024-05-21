@@ -15,11 +15,14 @@ void main() {
   book.keys;
   book.values;
 
-  book.forEach((key, value) => print('$key: $value'));
 
-  book.values.toList();
+  List valuesList = book.values.toList();
+
+  print(valuesList);
+
 
   for (MapEntry entry in book.entries) {
     print('${entry.key}: ${entry.value}');
   }
+  // book.forEach((key, value) => print('$key: $value')); is a better way to do the above
 }
